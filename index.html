@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#06111f" />
+  <title>Central Cruz & Farias</title>
+  <meta name="description" content="Central Cruz & Farias — treinamentos, chamados, fluxos, IA e dashboards em uma única plataforma." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-noise"></div>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+
+  <header class="hero">
+    <div class="brand-pill">
+      <span class="brand-mark">C&F</span>
+      <span>Cruz & Farias Consultoria</span>
+    </div>
+
+    <h1>Central Cruz & Farias</h1>
+    <p>
+      Treinamentos, chamados, fluxos, inteligência artificial e dashboards
+      em uma <strong>única plataforma.</strong>
+    </p>
+
+    <div class="hero-actions">
+      <button class="btn btn-primary" data-scroll="#plataforma">
+        Explorar plataforma
+        <span>→</span>
+      </button>
+      <button class="btn btn-secondary" id="openVideo">
+        Ver apresentação
+        <span>▶</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="plataforma" class="ecosystem">
+    <svg class="connector-layer" viewBox="0 0 1600 980" preserveAspectRatio="none" aria-hidden="true">
+      <defs>
+        <linearGradient id="goldLine" x1="0" x2="1">
+          <stop offset="0%" stop-color="#f2b64b" stop-opacity=".2"/>
+          <stop offset="45%" stop-color="#f4bf59"/>
+          <stop offset="100%" stop-color="#f2b64b" stop-opacity=".2"/>
+        </linearGradient>
+        <filter id="glow">
+          <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+          <feMerge>
+            <feMergeNode in="coloredBlur"/>
+            <feMergeNode in="SourceGraphic"/>
+          </feMerge>
+        </filter>
+      </defs>
+      <path d="M430 210 H490 Q520 210 520 245 V300" />
+      <path d="M350 545 H460 Q500 545 500 510 V475" />
+      <path d="M1120 210 H1170 Q1200 210 1200 245 V300" />
+      <path d="M1110 500 H1180 Q1200 500 1200 520 V580" />
+      <path d="M1110 760 H1180 Q1210 760 1210 800" />
+    </svg>
+
+    <section class="side-column left-column">
+      <article class="feature-card trainings-card">
+        <div class="feature-heading">
+          <div class="icon-orb">🎓</div>
+          <div>
+            <span class="eyebrow">Capacitação</span>
+            <h2>Treinamentos</h2>
+          </div>
+          <button class="link-btn">Ver todos</button>
+        </div>
+
+        <div class="training-grid">
+          <button class="video-tile" data-title="Atendimento de excelência">
+            <span class="video-thumb thumb-one"><i>▶</i></span>
+            <strong>Atendimento de Excelência</strong>
+            <small>12:45</small>
+          </button>
+          <button class="video-tile" data-title="Processos de onboarding">
+            <span class="video-thumb thumb-two"><i>▶</i></span>
+            <strong>Processos de Onboarding</strong>
+            <small>18:30</small>
+          </button>
+          <button class="video-tile" data-title="Segurança da informação">
+            <span class="video-thumb thumb-three"><i>▶</i></span>
+            <strong>Segurança da Informação</strong>
+            <small>15:20</small>
+          </button>
+        </div>
+
+        <div class="learning-paths">
+          <div class="section-label">Trilhas de aprendizado</div>
+          <div class="path-row">
+            <span>Atendimento</span><div class="progress"><i style="width:75%"></i></div><b>75%</b>
+          </div>
+          <div class="path-row">
+            <span>Liderança</span><div class="progress"><i style="width:50%"></i></div><b>50%</b>
+          </div>
+          <div class="path-row">
+            <span>Sistemas</span><div class="progress"><i style="width:80%"></i></div><b>80%</b>
+          </div>
+        </div>
+      </article>
+
+      <article class="feature-card ai-card">
+        <div class="feature-heading">
+          <div class="icon-orb">🧠</div>
+          <div>
+            <span class="eyebrow">Assistente</span>
+            <h2>IA Integrada</h2>
+          </div>
+          <span class="status-online">● Online</span>
+        </div>
+
+        <div class="chat-window" id="chatWindow">
+          <div class="message assistant">
+            Olá! Sou a IA da Central Cruz & Farias.<br>
+            Como posso ajudar você hoje?
+          </div>
+          <button class="quick-question">Como abrir um chamado?</button>
+          <button class="quick-question">Quais treinamentos estão pendentes?</button>
+          <button class="quick-question">Mostre os indicadores do dashboard.</button>
+        </div>
+
+        <form class="chat-form" id="chatForm">
+          <input id="chatInput" type="text" placeholder="Digite sua dúvida..." autocomplete="off">
+          <button type="submit">➤</button>
+        </form>
+      </article>
+    </section>
+
+    <section class="center-stage">
+      <div class="monitor-shell">
+        <div class="monitor-screen">
+          <div class="app-topbar">
+            <div class="app-logo"><span>∞</span> Central Cruz & Farias</div>
+            <div class="top-actions">
+              <button aria-label="Pesquisar">⌕</button>
+              <button aria-label="Notificações">♢</button>
+              <div class="avatar">GF</div>
+              <span>Administrador</span>
+            </div>
+          </div>
+
+          <div class="app-layout">
+            <nav class="sidebar">
+              <button class="nav-item active" data-panel="inicio"><span>⌂</span>Início</button>
+              <button class="nav-item" data-panel="treinamentos"><span>▣</span>Treinamentos</button>
+              <button class="nav-item" data-panel="chamados"><span>◈</span>Chamados</button>
+              <button class="nav-item" data-panel="fluxos"><span>⌘</span>Fluxos</button>
+              <button class="nav-item" data-panel="ia"><span>✦</span>IA Integrada</button>
+              <button class="nav-item" data-panel="dashboards"><span>▥</span>Dashboards</button>
+              <button class="nav-item" data-panel="configuracoes"><span>⚙</span>Configurações</button>
+            </nav>
+
+            <div class="dashboard-content">
+              <section class="screen-panel active" id="panel-inicio">
+                <div class="welcome-row">
+                  <div>
+                    <span>Bem-vindo à</span>
+                    <h3>Central Cruz & Farias</h3>
+                    <p>Sua plataforma integrada para gestão, operação e inteligência.</p>
+                  </div>
+                  <div class="gold-wave"></div>
+                </div>
+
+                <div class="kpi-grid">
+                  <div class="kpi"><small>Chamados abertos</small><strong>24</strong><span>+12% no mês</span></div>
+                  <div class="kpi"><small>Em andamento</small><strong>16</strong><span>+8% no mês</span></div>
+                  <div class="kpi"><small>Resolvidos</small><strong>128</strong><span>+15% no mês</span></div>
+                  <div class="kpi"><small>SLA</small><strong>98%</strong><span>+5% no mês</span></div>
+                </div>
+
+                <div class="dashboard-bottom">
+                  <div class="activity-box">
+                    <h4>Atividades recentes</h4>
+                    <ul>
+                      <li><span>◉</span> Chamado #4587 atualizado <time>há 10 min</time></li>
+                      <li><span>◈</span> Novo treinamento publicado <time>há 1 hora</time></li>
+                      <li><span>⌘</span> Fluxo de onboarding atualizado <time>há 2 horas</time></li>
+                      <li><span>▥</span> Dashboard executivo compartilhado <time>há 3 horas</time></li>
+                    </ul>
+                  </div>
+                  <div class="quick-access">
+                    <h4>Acesso rápido</h4>
+                    <div class="quick-grid">
+                      <button>◈ <span>Abrir chamado</span></button>
+                      <button>▤ <span>Base de conhecimento</span></button>
+                      <button>🎓 <span>Meus treinamentos</span></button>
+                      <button>▥ <span>Ver dashboards</span></button>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+              <section class="screen-panel" id="panel-treinamentos">
+                <div class="panel-title"><span>Treinamentos</span><button>Novo treinamento</button></div>
+                <div class="module-list">
+                  <div><b>Atendimento de Excelência</b><span>75%</span></div>
+                  <div><b>Processos de Onboarding</b><span>50%</span></div>
+                  <div><b>Segurança da Informação</b><span>80%</span></div>
+                  <div><b>Comunicação Assertiva</b><span>30%</span></div>
+                </div>
+              </section>
+
+              <section class="screen-panel" id="panel-chamados">
+                <div class="panel-title"><span>Meus chamados</span><button>Abrir chamado</button></div>
+                <div class="ticket-list"></div>
+              </section>
+
+              <section class="screen-panel" id="panel-fluxos">
+                <div class="panel-title"><span>Fluxos operacionais</span><button>Novo fluxo</button></div>
+                <div class="flow-canvas">
+                  <div>Início</div><i>→</i><div>Receber solicitação</div><i>→</i><div>Analisar demanda</div>
+                  <i>→</i><div>Resolver</div><i>→</i><div>Finalizar</div>
+                </div>
+              </section>
+
+              <section class="screen-panel" id="panel-ia">
+                <div class="panel-title"><span>IA Integrada</span><button>Nova conversa</button></div>
+                <div class="assistant-panel">
+                  <div class="assistant-avatar">✦</div>
+                  <h4>Como posso apoiar sua operação hoje?</h4>
+                  <p>Consulte processos, treinamentos, chamados e indicadores em segundos.</p>
+                </div>
+              </section>
+
+              <section class="screen-panel" id="panel-dashboards">
+                <div class="panel-title"><span>Dashboards</span><button>Exportar</button></div>
+                <div class="mini-chart">
+                  <div style="height:35%"></div><div style="height:48%"></div><div style="height:42%"></div>
+                  <div style="height:60%"></div><div style="height:53%"></div><div style="height:75%"></div>
+                  <div style="height:82%"></div><div style="height:92%"></div>
+                </div>
+              </section>
+
+              <section class="screen-panel" id="panel-configuracoes">
+                <div class="panel-title"><span>Configurações</span></div>
+                <div class="settings-list">
+                  <label><span>Notificações por e-mail</span><input type="checkbox" checked></label>
+                  <label><span>Modo de alto contraste</span><input type="checkbox"></label>
+                  <label><span>Relatório semanal</span><input type="checkbox" checked></label>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+        <div class="monitor-neck"></div>
+        <div class="monitor-base"></div>
+      </div>
+
+      <div class="device-row">
+        <div class="laptop mock-device">
+          <div class="laptop-screen">
+            <div class="mini-dashboard">
+              <span>Dashboards</span>
+              <div class="mini-kpis"><i>342</i><i>96%</i><i>98%</i><i>4,8/5</i></div>
+              <div class="line-chart"></div>
+            </div>
+          </div>
+          <div class="laptop-base"></div>
+        </div>
+
+        <div class="phone mock-device">
+          <div class="phone-notch"></div>
+          <div class="phone-title">Central C&F</div>
+          <div class="phone-grid">
+            <span>🎓</span><span>🎧</span><span>⌘</span><span>✦</span><span>▥</span><span>⚙</span>
+          </div>
+        </div>
+
+        <div class="tablet mock-device">
+          <div class="tablet-title">Meus treinamentos</div>
+          <div class="tablet-row"><span>Atendimento</span><i style="width:75%"></i><b>75%</b></div>
+          <div class="tablet-row"><span>Onboarding</span><i style="width:50%"></i><b>50%</b></div>
+          <div class="tablet-row"><span>Segurança</span><i style="width:80%"></i><b>80%</b></div>
+          <div class="tablet-row"><span>Comunicação</span><i style="width:30%"></i><b>30%</b></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="side-column right-column">
+      <article class="feature-card tickets-card">
+        <div class="feature-heading">
+          <div class="icon-orb">🎧</div>
+          <div>
+            <span class="eyebrow">Atendimento</span>
+            <h2>Chamados</h2>
+          </div>
+          <button class="link-btn">Ver todos</button>
+        </div>
+        <div id="externalTickets" class="external-ticket-list"></div>
+      </article>
+
+      <article class="feature-card flow-card">
+        <div class="feature-heading">
+          <div class="icon-orb">⌘</div>
+          <div>
+            <span class="eyebrow">Processos</span>
+            <h2>Fluxos</h2>
+          </div>
+        </div>
+        <div class="flow-diagram">
+          <div>▶ Início</div><span>→</span><div>▣ Solicitação</div><span>→</span><div>◉ Análise</div>
+          <b>↓</b>
+          <div class="decision">Escalar?</div>
+          <div class="flow-bottom"><div>✓ Finalizar</div><span>←</span><div>Resolver</div></div>
+        </div>
+      </article>
+
+      <article class="feature-card analytics-card">
+        <div class="feature-heading">
+          <div class="icon-orb">▥</div>
+          <div>
+            <span class="eyebrow">Indicadores</span>
+            <h2>Dashboards</h2>
+          </div>
+          <button class="link-btn">Ver todos</button>
+        </div>
+        <div class="analytics-kpis">
+          <div><small>Total de chamados</small><strong>342</strong><span>+18%</span></div>
+          <div><small>Taxa de resolução</small><strong>96%</strong><span>+7%</span></div>
+          <div><small>SLA</small><strong>98%</strong><span>+5%</span></div>
+          <div><small>Satisfação</small><strong>4,8/5</strong><span>+0,3</span></div>
+        </div>
+        <div class="analytics-visuals">
+          <div class="donut"></div>
+          <div class="spark-bars">
+            <i style="height:28%"></i><i style="height:42%"></i><i style="height:39%"></i><i style="height:55%"></i>
+            <i style="height:49%"></i><i style="height:66%"></i><i style="height:74%"></i><i style="height:88%"></i>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <section class="benefits">
+    <div class="benefit"><span>01</span><h3>Conhecimento centralizado</h3><p>Treinamentos, processos e materiais em um só ambiente.</p></div>
+    <div class="benefit"><span>02</span><h3>Atendimento rastreável</h3><p>Chamados com status, responsáveis, SLA e histórico completo.</p></div>
+    <div class="benefit"><span>03</span><h3>Decisões orientadas por dados</h3><p>Indicadores executivos para acompanhar eficiência e evolução.</p></div>
+  </section>
+
+  <footer>
+    <div>
+      <strong>Central Cruz & Farias</strong>
+      <p>Processos, tecnologia e inteligência conectados à execução.</p>
+    </div>
+    <button class="btn btn-primary" data-scroll="#plataforma">Acessar demonstração</button>
+  </footer>
+
+  <div class="modal" id="videoModal" aria-hidden="true">
+    <div class="modal-backdrop"></div>
+    <div class="modal-card">
+      <button class="modal-close" id="closeModal">×</button>
+      <div class="play-orb">▶</div>
+      <h3>Apresentação da Central Cruz & Farias</h3>
+      <p>Este espaço pode receber seu vídeo institucional, tutorial ou demonstração do sistema.</p>
+    </div>
+  </div>
+
+  <div class="toast" id="toast"></div>
+  <script src="app.js"></script>
+</body>
+</html>
