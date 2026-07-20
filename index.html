@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Início | Central Cruz & Farias</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="inicio">
+<div class="noise"></div>
+<aside class="sidebar" id="sidebar">
+  <div class="brand">
+    <div class="brand-icon">C&F</div>
+    <div><strong>Central</strong><small>Cruz & Farias</small></div>
+  </div>
+  <nav>
+<a href="index.html" data-page="inicio"><span>⌂</span>Início</a>
+<a href="treinamentos.html" data-page="treinamentos"><span>🎓</span>Treinamentos</a>
+<a href="chamados.html" data-page="chamados"><span>🎧</span>Chamados</a>
+<a href="fluxos.html" data-page="fluxos"><span>⌘</span>Fluxos</a>
+<a href="ia.html" data-page="ia"><span>✦</span>IA Integrada</a>
+<a href="dashboards.html" data-page="dashboards"><span>▥</span>Dashboards</a>
+</nav>
+  <div class="sidebar-footer">
+    <div class="mini-avatar">GF</div>
+    <div><strong>Gustavo Farias</strong><small>Administrador</small></div>
+  </div>
+</aside>
+<div class="mobile-overlay" id="mobileOverlay"></div>
+<main class="app">
+<header class="topbar">
+  <button class="menu-btn" id="menuBtn">☰</button>
+  <div>
+    <span class="eyebrow">CENTRAL CRUZ & FARIAS</span>
+    <h1>Início</h1>
+  </div>
+  <div class="top-actions">
+    <button class="icon-btn" id="searchBtn">⌕</button>
+    <button class="icon-btn">♢</button>
+    <div class="avatar">GF</div>
+  </div>
+</header>
+<section class="content">
+
+<section class="hero-card">
+  <div>
+    <span class="tag">PLATAFORMA INTEGRADA</span>
+    <h2>Bem-vindo à<br><em>Central Cruz & Farias</em></h2>
+    <p>Treinamentos, chamados, processos, inteligência artificial e indicadores em uma única central de operação.</p>
+    <div class="hero-actions">
+      <a class="btn primary" href="chamados.html">Abrir chamado</a>
+      <a class="btn secondary" href="treinamentos.html">Ver treinamentos</a>
+    </div>
+  </div>
+  <div class="gold-art"></div>
+</section>
+
+<section class="kpi-grid">
+  <article class="kpi-card"><span>Chamados abertos</span><strong>24</strong><small>↑ 12% no mês</small></article>
+  <article class="kpi-card"><span>Em andamento</span><strong>16</strong><small>↑ 8% no mês</small></article>
+  <article class="kpi-card"><span>Resolvidos</span><strong>128</strong><small>↑ 15% no mês</small></article>
+  <article class="kpi-card"><span>SLA de atendimento</span><strong>98%</strong><small>↑ 5% no mês</small></article>
+</section>
+
+<section class="home-grid">
+  <article class="panel">
+    <div class="panel-head"><div><span class="eyebrow">ACESSO DIRETO</span><h3>Módulos da central</h3></div></div>
+    <div class="module-grid">
+      <a href="treinamentos.html" class="module-card"><i>🎓</i><strong>Treinamentos</strong><span>Trilhas, vídeos e materiais</span></a>
+      <a href="chamados.html" class="module-card"><i>🎧</i><strong>Chamados</strong><span>Solicitações e suporte</span></a>
+      <a href="fluxos.html" class="module-card"><i>⌘</i><strong>Fluxos</strong><span>Processos operacionais</span></a>
+      <a href="ia.html" class="module-card"><i>✦</i><strong>IA Integrada</strong><span>Assistente inteligente</span></a>
+      <a href="dashboards.html" class="module-card"><i>▥</i><strong>Dashboards</strong><span>Indicadores executivos</span></a>
+      <button class="module-card" data-toast="Base de conhecimento será conectada ao conteúdo da empresa."><i>▤</i><strong>Base de conhecimento</strong><span>Procedimentos e documentos</span></button>
+    </div>
+  </article>
+
+  <article class="panel activity-panel">
+    <div class="panel-head"><div><span class="eyebrow">ATUALIZAÇÕES</span><h3>Atividades recentes</h3></div><button class="text-btn">Ver tudo</button></div>
+    <div class="activity-list">
+      <div><i>🎧</i><p><strong>Chamado #4587 atualizado</strong><span>Status alterado para “Em andamento”</span></p><time>10 min</time></div>
+      <div><i>🎓</i><p><strong>Novo treinamento publicado</strong><span>Boas práticas de atendimento</span></p><time>1 h</time></div>
+      <div><i>⌘</i><p><strong>Fluxo atualizado</strong><span>Processo de onboarding</span></p><time>2 h</time></div>
+      <div><i>▥</i><p><strong>Dashboard compartilhado</strong><span>Indicadores executivos</span></p><time>3 h</time></div>
+    </div>
+  </article>
+</section>
+
+</section>
+</main>
+<div class="toast" id="toast"></div>
+<script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Treinamentos | Central Cruz & Farias</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="treinamentos">
+<div class="noise"></div>
+<aside class="sidebar" id="sidebar">
+  <div class="brand">
+    <div class="brand-icon">C&F</div>
+    <div><strong>Central</strong><small>Cruz & Farias</small></div>
+  </div>
+  <nav>
+<a href="index.html" data-page="inicio"><span>⌂</span>Início</a>
+<a href="treinamentos.html" data-page="treinamentos"><span>🎓</span>Treinamentos</a>
+<a href="chamados.html" data-page="chamados"><span>🎧</span>Chamados</a>
+<a href="fluxos.html" data-page="fluxos"><span>⌘</span>Fluxos</a>
+<a href="ia.html" data-page="ia"><span>✦</span>IA Integrada</a>
+<a href="dashboards.html" data-page="dashboards"><span>▥</span>Dashboards</a>
+</nav>
+  <div class="sidebar-footer">
+    <div class="mini-avatar">GF</div>
+    <div><strong>Gustavo Farias</strong><small>Administrador</small></div>
+  </div>
+</aside>
+<div class="mobile-overlay" id="mobileOverlay"></div>
+<main class="app">
+<header class="topbar">
+  <button class="menu-btn" id="menuBtn">☰</button>
+  <div>
+    <span class="eyebrow">CENTRAL CRUZ & FARIAS</span>
+    <h1>Treinamentos</h1>
+  </div>
+  <div class="top-actions">
+    <button class="icon-btn" id="searchBtn">⌕</button>
+    <button class="icon-btn">♢</button>
+    <div class="avatar">GF</div>
+  </div>
+</header>
+<section class="content">
+
+<div class="page-actions">
+  <div><p>Acompanhe trilhas, vídeos, materiais e evolução de cada colaborador.</p></div>
+  <button class="btn primary" data-toast="Novo treinamento iniciado.">+ Novo treinamento</button>
+</div>
+<section class="summary-strip">
+  <div><span>Trilhas ativas</span><strong>12</strong></div>
+  <div><span>Colaboradores</span><strong>86</strong></div>
+  <div><span>Conclusão média</span><strong>68%</strong></div>
+  <div><span>Certificados emitidos</span><strong>142</strong></div>
+</section>
+<section class="training-page-grid">
+  <article class="panel">
+    <div class="panel-head"><div><span class="eyebrow">DESTAQUES</span><h3>Treinamentos recomendados</h3></div><button class="text-btn">Ver todos</button></div>
+    <div class="course-grid">
+      <button class="course-card" data-toast="Abrindo Atendimento de Excelência">
+        <div class="course-cover cover-1"><span>▶</span></div><div><small>ATENDIMENTO</small><h4>Atendimento de Excelência</h4><p>12 aulas • 2h 15min</p></div>
+      </button>
+      <button class="course-card" data-toast="Abrindo Processos de Onboarding">
+        <div class="course-cover cover-2"><span>▶</span></div><div><small>PROCESSOS</small><h4>Processos de Onboarding</h4><p>8 aulas • 1h 40min</p></div>
+      </button>
+      <button class="course-card" data-toast="Abrindo Segurança da Informação">
+        <div class="course-cover cover-3"><span>▶</span></div><div><small>TECNOLOGIA</small><h4>Segurança da Informação</h4><p>10 aulas • 1h 55min</p></div>
+      </button>
+    </div>
+  </article>
+  <article class="panel">
+    <div class="panel-head"><div><span class="eyebrow">MINHA EVOLUÇÃO</span><h3>Trilhas em andamento</h3></div></div>
+    <div class="learning-list">
+      <div><header><span>Trilha de Atendimento</span><b>75%</b></header><div class="bar"><i style="width:75%"></i></div><small>9 de 12 aulas concluídas</small></div>
+      <div><header><span>Trilha de Liderança</span><b>50%</b></header><div class="bar"><i style="width:50%"></i></div><small>5 de 10 aulas concluídas</small></div>
+      <div><header><span>Trilha de Sistemas</span><b>80%</b></header><div class="bar"><i style="width:80%"></i></div><small>12 de 15 aulas concluídas</small></div>
+      <div><header><span>Comunicação Assertiva</span><b>30%</b></header><div class="bar"><i style="width:30%"></i></div><small>3 de 10 aulas concluídas</small></div>
+    </div>
+  </article>
+</section>
+
+</section>
+</main>
+<div class="toast" id="toast"></div>
+<script src="app.js"></script>
+</body>
+</html>

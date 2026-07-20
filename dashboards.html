@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboards | Central Cruz & Farias</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="dashboards">
+<div class="noise"></div>
+<aside class="sidebar" id="sidebar">
+  <div class="brand">
+    <div class="brand-icon">C&F</div>
+    <div><strong>Central</strong><small>Cruz & Farias</small></div>
+  </div>
+  <nav>
+<a href="index.html" data-page="inicio"><span>⌂</span>Início</a>
+<a href="treinamentos.html" data-page="treinamentos"><span>🎓</span>Treinamentos</a>
+<a href="chamados.html" data-page="chamados"><span>🎧</span>Chamados</a>
+<a href="fluxos.html" data-page="fluxos"><span>⌘</span>Fluxos</a>
+<a href="ia.html" data-page="ia"><span>✦</span>IA Integrada</a>
+<a href="dashboards.html" data-page="dashboards"><span>▥</span>Dashboards</a>
+</nav>
+  <div class="sidebar-footer">
+    <div class="mini-avatar">GF</div>
+    <div><strong>Gustavo Farias</strong><small>Administrador</small></div>
+  </div>
+</aside>
+<div class="mobile-overlay" id="mobileOverlay"></div>
+<main class="app">
+<header class="topbar">
+  <button class="menu-btn" id="menuBtn">☰</button>
+  <div>
+    <span class="eyebrow">CENTRAL CRUZ & FARIAS</span>
+    <h1>Dashboards</h1>
+  </div>
+  <div class="top-actions">
+    <button class="icon-btn" id="searchBtn">⌕</button>
+    <button class="icon-btn">♢</button>
+    <div class="avatar">GF</div>
+  </div>
+</header>
+<section class="content">
+
+<div class="page-actions">
+  <div><p>Acompanhe desempenho, produtividade, SLA, satisfação e evolução da central.</p></div>
+  <div class="action-row"><select><option>Últimos 6 meses</option><option>Últimos 30 dias</option><option>Este ano</option></select><button class="btn secondary" data-toast="Relatório exportado.">Exportar</button></div>
+</div>
+<section class="kpi-grid dashboard-kpis">
+  <article class="kpi-card"><span>Total de chamados</span><strong>342</strong><small>↑ 18%</small></article>
+  <article class="kpi-card"><span>Taxa de resolução</span><strong>96%</strong><small>↑ 7%</small></article>
+  <article class="kpi-card"><span>SLA</span><strong>98%</strong><small>↑ 5%</small></article>
+  <article class="kpi-card"><span>Satisfação</span><strong>4,8/5</strong><small>↑ 0,3</small></article>
+</section>
+<section class="dashboard-grid">
+  <article class="panel chart-panel">
+    <div class="panel-head"><div><span class="eyebrow">EVOLUÇÃO</span><h3>Chamados por período</h3></div></div>
+    <canvas id="lineChart" width="700" height="300"></canvas>
+  </article>
+  <article class="panel chart-panel">
+    <div class="panel-head"><div><span class="eyebrow">STATUS</span><h3>Distribuição dos chamados</h3></div></div>
+    <div class="donut-wrap"><div class="big-donut"><span>342<small>Total</small></span></div>
+      <div class="legend"><div><i class="red"></i>Aberto <b>24</b></div><div><i class="yellow"></i>Em andamento <b>60</b></div><div><i class="green"></i>Resolvido <b>258</b></div></div>
+    </div>
+  </article>
+  <article class="panel chart-panel wide">
+    <div class="panel-head"><div><span class="eyebrow">PRODUTIVIDADE</span><h3>Atendimentos por categoria</h3></div></div>
+    <div class="horizontal-bars">
+      <div><span>Sistemas</span><i style="width:88%"></i><b>88</b></div>
+      <div><span>Acessos</span><i style="width:72%"></i><b>72</b></div>
+      <div><span>Cadastros</span><i style="width:64%"></i><b>64</b></div>
+      <div><span>Relatórios</span><i style="width:51%"></i><b>51</b></div>
+      <div><span>Processos</span><i style="width:43%"></i><b>43</b></div>
+    </div>
+  </article>
+</section>
+
+</section>
+</main>
+<div class="toast" id="toast"></div>
+<script src="app.js"></script>
+</body>
+</html>

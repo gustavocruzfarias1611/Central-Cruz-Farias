@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IA Integrada | Central Cruz & Farias</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="ia">
+<div class="noise"></div>
+<aside class="sidebar" id="sidebar">
+  <div class="brand">
+    <div class="brand-icon">C&F</div>
+    <div><strong>Central</strong><small>Cruz & Farias</small></div>
+  </div>
+  <nav>
+<a href="index.html" data-page="inicio"><span>⌂</span>Início</a>
+<a href="treinamentos.html" data-page="treinamentos"><span>🎓</span>Treinamentos</a>
+<a href="chamados.html" data-page="chamados"><span>🎧</span>Chamados</a>
+<a href="fluxos.html" data-page="fluxos"><span>⌘</span>Fluxos</a>
+<a href="ia.html" data-page="ia"><span>✦</span>IA Integrada</a>
+<a href="dashboards.html" data-page="dashboards"><span>▥</span>Dashboards</a>
+</nav>
+  <div class="sidebar-footer">
+    <div class="mini-avatar">GF</div>
+    <div><strong>Gustavo Farias</strong><small>Administrador</small></div>
+  </div>
+</aside>
+<div class="mobile-overlay" id="mobileOverlay"></div>
+<main class="app">
+<header class="topbar">
+  <button class="menu-btn" id="menuBtn">☰</button>
+  <div>
+    <span class="eyebrow">CENTRAL CRUZ & FARIAS</span>
+    <h1>IA Integrada</h1>
+  </div>
+  <div class="top-actions">
+    <button class="icon-btn" id="searchBtn">⌕</button>
+    <button class="icon-btn">♢</button>
+    <div class="avatar">GF</div>
+  </div>
+</header>
+<section class="content">
+
+<section class="ai-layout">
+  <aside class="panel conversation-sidebar">
+    <button class="btn primary full" id="newConversation">+ Nova conversa</button>
+    <div class="conversation-list">
+      <button class="active">Indicadores de chamados<span>Hoje</span></button>
+      <button>Processo de cadastro<span>Ontem</span></button>
+      <button>Treinamentos pendentes<span>15 jul</span></button>
+      <button>Resumo operacional<span>12 jul</span></button>
+    </div>
+  </aside>
+  <article class="panel chat-panel">
+    <div class="ai-header">
+      <div class="ai-orb">✦</div>
+      <div><h3>Assistente Cruz & Farias</h3><span>● Online • conectado à base corporativa</span></div>
+    </div>
+    <div class="chat-messages" id="chatMessages">
+      <div class="chat assistant"><div class="ai-mini">✦</div><p>Olá! Posso consultar treinamentos, chamados, fluxos e indicadores. Como posso ajudar?</p></div>
+      <div class="suggestions">
+        <button>Quais chamados estão atrasados?</button>
+        <button>Mostre meus treinamentos pendentes</button>
+        <button>Explique o fluxo de cadastro</button>
+      </div>
+    </div>
+    <form class="chat-input" id="aiForm">
+      <input id="aiInput" placeholder="Digite sua pergunta...">
+      <button type="submit">➤</button>
+    </form>
+  </article>
+</section>
+
+</section>
+</main>
+<div class="toast" id="toast"></div>
+<script src="app.js"></script>
+</body>
+</html>
